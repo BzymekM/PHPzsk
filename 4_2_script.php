@@ -9,7 +9,7 @@
         header("location: ./square.php");
         break;
 
-      case 'prostokąt':
+      case 'prostokat':
         header("location: ./rectangle.php");
         break;
     }
@@ -23,3 +23,5 @@
 
   }
 ?>
+<br>
+<a href="4_2_form.php">strona główna</a>

@@ -19,9 +19,8 @@
         $sideB=str_replace(',', '.', $_GET['sideB']);
         // echo $sideA;
         // pole
-        $area=$sideA*$sideB;
-        // obwód
-        $circuit=2*$sideA+2*$sideB;
+        $area=number_format($sideA*$sideB,3);        // obwód
+        $circuit=number_format(2*$sideA+2*$sideB,3);
         echo <<< RESULT
           <hr>
           Pole prostokąta wynosi $area cm<sup>2</sup><br>
@@ -31,5 +30,7 @@ RESULT;
         echo "Wypełnij wszystkie pola!";
       }
      ?>
+     <br>
+     <a href="4_2_form.php">strona główna</a>
   </body>
 </html>

@@ -17,9 +17,9 @@
         $sideA=str_replace(',', '.', $_GET['sideA']); //str_replace(zbiera argument ze stringa, zamienia go na inny, wypisuje po zmianie)
          //echo $sideA;
         // pole
-        $area=$sideA**2;
+        $area=number_format($sideA*$sideA,3);
         // obwód
-        $circuit=4*$sideA;
+        $circuit=number_format(4*$sideA,3);
         echo <<< RESULT
           <hr>
           Pole kwadratu wynosi $area cm<sup>2</sup><br>
@@ -29,5 +29,7 @@ RESULT;
         echo "Wypełnij wszystkie pola!";
       }
      ?>
+     <br>
+     <a href="4_2_form.php">strona główna</a>
   </body>
 </html>
